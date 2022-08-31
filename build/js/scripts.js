@@ -1,3 +1,6 @@
+// Custom Scripts
+// Custom scripts
+
 // Мобильное меню бургер
 function burgerMenu() {
   const burger = document.querySelector('.burger')
@@ -50,3 +53,5 @@ function fixedNav() {
   }
 }
 window.addEventListener('scroll', fixedNav)
+
+
