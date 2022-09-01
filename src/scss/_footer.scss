@@ -1,4 +1,156 @@
 // Footer
-footer {
-    display: block;
+.footer {
+
+  // .footer__inner
+
+  &__inner {
+    background-color: #3C353E;
+    border-radius: 20px 20px 0px 0px;
+
+    @media (max-width: $breakpoint768) {
+      margin: 0 -20px;
+    }
+  }
+
+  // .footer__nav
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 40px 40px;
+    color: $whiteColor;
+
+    @media (max-width: $breakpoint992) {
+      padding: 50px 20px 30px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 30px 20px 24px;
+    }
+  }
+
+  // .footer__addresses
+
+  &__addresses {
+
+    @media (max-width: $breakpoint992) {
+     flex: 0 1 35%; 
+    }
+
+    @media (max-width: $breakpoint768) {
+      order: 3;
+    }
+  }
+
+  // .footer__address
+
+  &__address {
+    margin-bottom: 10px;
+    & > p:first-child {
+      font-weight: 700;
+    }
+  }
+
+  // .footer__requisites
+
+  &__requisites {
+    & > p:first-child {
+      font-weight: 700;
+    }
+  }
+
+  // .footer__logo
+
+  &__logo {
+    margin-left: -100px;
+
+    @media (max-width: $breakpoint992) {
+      flex: 0 1 40%;
+      display: flex;
+      justify-content: center;
+      margin-left: 0;
+    }
+
+    @media (max-width: $breakpoint768) {
+      order: 1;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+  }
+
+  // .footer__logo-link
+
+  &__logo-link {}
+
+  // .footer__logo-img
+
+  &__logo-img {}
+
+  // .footer__connection
+
+  &__connection {
+    text-align: right;
+
+    @media (max-width: $breakpoint992) {
+      flex: 0 1 30%;
+    }
+
+    @media (max-width: $breakpoint768) {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 10px;
+      text-align: left;
+      order: 2;
+    }
+  }
+
+  // .footer__connection-text
+
+  &__connection-text {
+    font-weight: 700;
+  }
+
+  // .footer__connection-link
+
+  &__connection-link {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 7px;
+    font-weight: 14;
+    font-weight: 400;
+    color: $whiteColor;
+
+    @media (max-width: $breakpoint768) {
+      justify-content: flex-start;
+      margin-bottom: 0;
+    }
+  }
+
+  // .footer__connection-vk
+
+  &__connection-vk {
+  }
+
+  // .footer__copy
+
+  &__copy {
+    padding: 6px 40px 11px 0;
+    background: rgba(217, 217, 217, 0.2);
+    text-align: right;
+
+    @media (max-width: $breakpoint992) {
+      text-align: center;
+    }
+  }
+
+  // .footer__copy-text
+
+  &__copy-text {
+    font-size: 10px;
+    color: $whiteColor;
+  }
 }
