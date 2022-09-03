@@ -1,0 +1,177 @@
+.sales-geography {
+  padding: 40px 0 80px;
+
+  @media (max-width: $breakpoint992) {
+    padding: 40px 0 60px;
+  }
+
+  @media (max-width: $breakpoint480) {
+    padding: 40px 0 45px;
+  }
+
+  // .sales-geography__inner
+
+  &__inner {}
+
+  // .sales-geography__title
+
+  &__title {
+    margin-bottom: 60px;
+
+    @media (max-width: $breakpoint992) {
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: $breakpoint480) {
+      margin-bottom: 0;
+    }
+  }
+
+  // .sales-geography__regiones
+
+  &__regiones {
+    position: relative;
+  }
+
+  // .sales-geography__region
+
+  &__region {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(100%);
+    display: none;
+    padding-left: 43px;
+    font-size: 18px;
+    line-height: 135%;
+    color: #38313C;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      width: 32px;
+      height: 32px;
+      background-image: url('../img/gps.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    @media (max-width: $breakpoint480) {
+      padding-left: 32px;
+
+      &::after {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  // .sales-geography__region-link
+
+  &__region-link {
+
+    &:hover {
+      path {
+        fill-opacity: 1;
+        transition: all 0.3s ease 0s;
+      }
+    }
+  }
+
+  // .sales-geography__map
+
+  &__map {
+    display: flex;
+
+    @media(max-width: 768px) {
+      height: 450px;
+      align-items: center;
+    }
+
+    @media (max-width: $breakpoint480) {
+      width: 730px;
+      height: 420px;
+
+      svg {
+        height: 420px;
+      }
+    }
+
+  }
+
+  &__map--scroll {
+
+    @media (max-width: $breakpoint480) {
+      margin-right: -20px;
+      margin-left: -20px;
+      margin-bottom: 20px;
+      overflow-x: scroll;
+    }
+
+  }
+
+  &__added {
+    display: flex;
+    justify-content: flex-end;
+
+    @media (max-width: $breakpoint992) {
+      justify-content: center;
+    }
+  }
+
+  &__added-link {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 191px;
+    height: 32px;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    overflow: hidden;
+    background-color: #3C353E;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: $whiteColor;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 100%;
+      height: 0;
+      width: 0;
+      margin: auto;
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+    }
+
+    &:hover:before,
+    &:focus:before {
+      width: 300px;
+      height: 300px;
+    }
+
+    &:active:before {
+      background-color: #3C353E;
+    }
+  }
+}
