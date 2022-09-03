@@ -1,21 +1,15 @@
 // Container
 .container {
-    max-width: ($containerWidth + $containerPadding) + px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 $containerSidePadding + px;
+  max-width: ($containerWidth + $containerPadding) + px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 $containerSidePadding + px;
 
-    @media (max-width: $breakpoint992) {
-      
-    }
+  @media (max-width: $breakpoint992) {}
 
-    @media (max-width: $breakpoint768) {
-      
-    }
+  @media (max-width: $breakpoint768) {}
 
-    @media (max-width: $breakpoint480) {
-    
-    }
+  @media (max-width: $breakpoint480) {}
 }
 
 // Body Locked
@@ -26,22 +20,22 @@ body {
   font-size: 14px;
   line-height: 130%;
   color: $blackColor;
-  
-    &.locked {
-        overflow: hidden;
-    }
+
+  &.locked {
+    overflow: hidden;
+  }
 }
 
 // Animations
 // Fade
 @keyframes fade {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 .title {

@@ -1,58 +1,126 @@
 <header class="header">
-    <!-- Navbar -->
-    <nav class="nav">
-        <div class="container">
-          <address class="navbar__address">
-            г. Иркутск, ул. Полярная, д. 95А
-          </address>
-            <div class="navbar">
-                <ul class="menu">
-                    <li class="menu__item"><a href="#catalog" class="menu__item-link" data-scroll>Продукция</a></li>
-                    <li class="menu__item"><a href="#catalog" class="menu__item-link" data-scroll>Цены</a></li>
-                    <li class="menu__item"><a href="#about-company" class="menu__item-link" data-scroll>О компании</a></li>
-                    <li class="menu__item"><a href="#footer" class="menu__item-link" data-scroll>Контакты</a></li>
-                </ul>
+  <!-- Navbar -->
+  <nav class="nav">
+    <div class="container">
+      <address class="navbar__address">
+        г. Иркутск, ул. Полярная, д. 95А
+      </address>
+      <div class="navbar">
+        <ul class="menu">
+          <li class="menu__item"><a href="#catalog" class="menu__item-link" data-scroll>Продукция</a></li>
+          <li class="menu__item"><a href="#catalog" class="menu__item-link" data-scroll>Цены</a></li>
+          <li class="menu__item"><a href="#about-company" class="menu__item-link" data-scroll>О компании</a></li>
+          <li class="menu__item"><a href="#footer" class="menu__item-link" data-scroll>Контакты</a></li>
+        </ul>
 
-                <div class="logo"> <a href="#"> <img src="img/header-logo.svg" alt="логотип фирмы"></a> </div>
+        <div class="logo"> <a href="#"> <img src="img/header-logo.svg" alt="логотип фирмы"></a> </div>
 
-                <div class="info">
-                  <div class="info__phone-address">
-                    <a class="info__phone-link" href="tel:+79132522789">+7 913 252 27 89</a>
-                    <address class="info__address"> г. Иркутск, ул. Полярная, д. 95А</address>
-                  </div>
-
-                  <div class="info__vk">
-                    <a class="info__vk-link" href=""><img src="img/vk.svg" alt="ссылка на вк"></a>
-                  </div>
-                </div>
-                <div class="burger">
-                    <span></span>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <div class="hero">
-      <div class="container">
-        <div class="hero__inner">
-          <h1 class="hero__title">
-            Купить лиственицу от производителя
-          </h1>
-
-          <h2 class="hero__subtitle">
-            Стабильные поставки,<br>
-            запас продукции на складе
-          </h2>
-
-          <div class="hero__size">
-            до 1000 м
-            <span class="hero__size-cube">3</span>
+        <div class="info">
+          <div class="info__phone-address">
+            <a class="info__phone-link" href="tel:+79132522789">+7 913 252 27 89</a>
+            <address class="info__address"> г. Иркутск, ул. Полярная, д. 95А</address>
           </div>
 
-          <div class="hero__btn">
-            <a class="hero__btn-link" href="">Оставить заявку</a>
+          <div class="info__vk">
+            <a class="info__vk-link" href=""><img src="img/vk.svg" alt="ссылка на вк"></a>
+          </div>
+        </div>
+        <div class="burger">
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="container">
+      <div class="hero__inner">
+        <h1 class="hero__title">
+          Купить лиственицу от производителя
+        </h1>
+
+        <h2 class="hero__subtitle">
+          Стабильные поставки,<br>
+          запас продукции на складе
+        </h2>
+
+        <div class="hero__size">
+          до 1000 м
+          <span class="hero__size-cube">3</span>
+        </div>
+
+        <div class="hero__btn">
+          <a class="hero__btn-link" data-fancybox href="#modal">Оставить заявку</a>
+
+          <div class="modal" id="modal" style="display: none;">
+            <div class="modal__inner">
+              <div class="modal__header">
+                <h4 class="modal__title title">
+                  Отправить <span>заявку</span>
+                </h4>
+
+                <img data-fancybox-close class="modal__close" src="img/close-modal.svg" alt="">
+              </div>
+
+              <form class="modal-form" action="#">
+                <div class="modal-form__inner">
+                  <div class="modal-form__group">
+                    <label class="modal-form__label" for="">Как Вас зовут?*</label>
+                    <input type="text" placeholder="Ваше имя" class="modal-form__input">
+                  </div>
+
+                  <div class="modal-form__group">
+                    <label class="modal-form__label" for="">Телефон?*</label>
+                    <input type="number" placeholder="+7 ХХХ ХХХ ХХ ХХ" class="modal-form__input">
+                  </div>
+
+                  <div class="modal-form__group">
+                    <label class="modal-form__label" for="">Вопрос/пожеление/комментарий</label>
+                    <textarea class="modal-form__textarea"></textarea>
+                  </div>
+
+                  <div class="modal-form__footer">
+                    <input type="checkbox" id="modal-checkbox" class="modal-form__checkebox">
+                    <label for="modal-checkbox" class="modal-form__label--checkbox">
+                      <div class="modal-form__check"></div>
+                      Даю согласие на обработку персональных данных
+                    </label>
+
+                    <!-- <button type="submit" class="modal-form__button">Оставить заявку</button> -->
+                    <a class="modal-form__button" data-fancybox href="#modal-finish">Оставить заявку</a>
+
+                    <div class="modal" id="modal-finish" style="display: none;">
+                      <div class="modal__inner">
+                        <div class="modal__header">
+                          <h4 class="modal__title title">
+                            Спасибо, <span>Ваша</span> заявка отправлена
+                          </h4>
+
+                          <img data-fancybox-close class="modal__close" src="img/close-modal.svg" alt="">
+                        </div>
+
+                        <form class="modal-form" action="#">
+                          <div class="modal-form__inner">
+                            <div class="modal-form__img">
+                              <img src="img/modal-finish-img.svg" alt="">
+                            </div>
+                            <div class="modal-form__footer">
+                              <!-- <button type="submit" class="modal-form__button">Понятно</button> -->
+                              <a class="modal-form__button modal-form__button-finish" href="form-finish">Понятно</a>
+                            </div>
+
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 </header>
