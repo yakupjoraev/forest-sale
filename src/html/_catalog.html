@@ -231,13 +231,17 @@
       на Вагонку «Штиль» из лиственницы
     </div>
 
+    <div id="js-message-error" class="modal__message-error" style="display: none">
+      <div class="message-error"></div>
+    </div>
+
     <form class="modal-form" action="#">
       <div class="modal-form__inner">
 
         <div class="modal-form__group">
           <label class="modal-form__label" for="">Количество?</label>
           <div class="modal-form__group-container">
-            <input type="number" min="5" placeholder="от 5" class="modal-form__input">
+            <input type="number" min="5" placeholder="от 5" class="modal-form__input js-input" required>
             <p class="modal-form__text">м. куб</p>
           </div>
 
@@ -245,12 +249,12 @@
 
         <div class="modal-form__group">
           <label class="modal-form__label" for="">Как Вас зовут?*</label>
-          <input type="text" placeholder="Ваше имя" class="modal-form__input">
+          <input type="text" placeholder="Ваше имя" class="modal-form__input js-input" required>
         </div>
 
         <div class="modal-form__group">
           <label class="modal-form__label" for="">Телефон?*</label>
-          <input type="number" placeholder="+7 ХХХ ХХХ ХХ ХХ" class="modal-form__input">
+          <input type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ" class="modal-form__input js-input js-input-phone" required>
         </div>
 
         <div class="modal-form__group">
@@ -259,7 +263,7 @@
         </div>
 
         <div class="modal-form__footer">
-          <input type="checkbox" id="modal-checkbox-two" class="modal-form__checkebox">
+          <input type="checkbox" id="modal-checkbox-two" class="modal-form__checkebox" required>
           <label for="modal-checkbox-two" class="modal-form__label--checkbox">
             <div class="modal-form__check"></div>
             Даю согласие на обработку персональных данных

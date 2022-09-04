@@ -183,6 +183,13 @@ body.locked {
   color: #FFFFFF;
 }
 
+.menu__item-link:hover {
+  color: #02dd09;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
 .info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1089,6 +1096,10 @@ body.locked {
       -ms-user-select: auto;
           user-select: auto;
   pointer-events: all;
+}
+
+.message-error {
+  color: red;
 }
 
 .fancybox-slide--html .fancybox-close-small {

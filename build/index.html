@@ -81,16 +81,20 @@
                 <img data-fancybox-close class="modal__close" src="img/close-modal.svg" alt="">
               </div>
 
+              <div id="js-message-error" class="modal__message-error" style="display: none">
+                <div class="message-error"></div>
+              </div>
+
               <form class="modal-form" action="#">
                 <div class="modal-form__inner">
                   <div class="modal-form__group">
                     <label class="modal-form__label" for="">Как Вас зовут?*</label>
-                    <input type="text" placeholder="Ваше имя" class="modal-form__input">
+                    <input type="text" placeholder="Ваше имя" class="modal-form__input js-input" required>
                   </div>
 
                   <div class="modal-form__group">
                     <label class="modal-form__label" for="">Телефон?*</label>
-                    <input type="number" placeholder="+7 ХХХ ХХХ ХХ ХХ" class="modal-form__input">
+                    <input type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ" class="modal-form__input js-input js-input-phone" required>
                   </div>
 
                   <div class="modal-form__group">
@@ -99,14 +103,14 @@
                   </div>
 
                   <div class="modal-form__footer">
-                    <input type="checkbox" id="modal-checkbox" class="modal-form__checkebox">
+                    <input type="checkbox" id="modal-checkbox" class="modal-form__checkebox" required>
                     <label for="modal-checkbox" class="modal-form__label--checkbox">
                       <div class="modal-form__check"></div>
                       Даю согласие на обработку персональных данных
                     </label>
 
-                    <!-- <button type="submit" class="modal-form__button">Оставить заявку</button> -->
-                    <a class="modal-form__button" data-fancybox href="#modal-finish">Оставить заявку</a>
+                    <button type="submit" class="modal-form__button">Оставить заявку</button>
+                    <!-- <a class="modal-form__button" data-fancybox href="#modal-finish">Оставить заявку</a> -->
 
                     <div class="modal" id="modal-finish" style="display: none;">
                       <div class="modal__inner">
@@ -379,13 +383,17 @@
       на Вагонку «Штиль» из лиственницы
     </div>
 
+    <div id="js-message-error" class="modal__message-error" style="display: none">
+      <div class="message-error"></div>
+    </div>
+
     <form class="modal-form" action="#">
       <div class="modal-form__inner">
 
         <div class="modal-form__group">
           <label class="modal-form__label" for="">Количество?</label>
           <div class="modal-form__group-container">
-            <input type="number" min="5" placeholder="от 5" class="modal-form__input">
+            <input type="number" min="5" placeholder="от 5" class="modal-form__input js-input" required>
             <p class="modal-form__text">м. куб</p>
           </div>
 
@@ -393,12 +401,12 @@
 
         <div class="modal-form__group">
           <label class="modal-form__label" for="">Как Вас зовут?*</label>
-          <input type="text" placeholder="Ваше имя" class="modal-form__input">
+          <input type="text" placeholder="Ваше имя" class="modal-form__input js-input" required>
         </div>
 
         <div class="modal-form__group">
           <label class="modal-form__label" for="">Телефон?*</label>
-          <input type="number" placeholder="+7 ХХХ ХХХ ХХ ХХ" class="modal-form__input">
+          <input type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ" class="modal-form__input js-input js-input-phone" required>
         </div>
 
         <div class="modal-form__group">
@@ -407,7 +415,7 @@
         </div>
 
         <div class="modal-form__footer">
-          <input type="checkbox" id="modal-checkbox-two" class="modal-form__checkebox">
+          <input type="checkbox" id="modal-checkbox-two" class="modal-form__checkebox" required>
           <label for="modal-checkbox-two" class="modal-form__label--checkbox">
             <div class="modal-form__check"></div>
             Даю согласие на обработку персональных данных
@@ -521,7 +529,79 @@
           </li>
 
           <li class="about-company__item about-company__item--btn">
-            <a class="about-company__item-link" href="">Оставить заявку</a>
+            <a data-fancybox  class="about-company__item-link" href="#modal-about-company">Оставить заявку</a>
+
+            <div class="modal" id="modal-about-company" style="display: none;">
+              <div class="modal__inner">
+                <div class="modal__header">
+                  <h4 class="modal__title title">
+                    Отправить <span>заявку</span>
+                  </h4>
+  
+                  <img data-fancybox-close class="modal__close" src="img/close-modal.svg" alt="">
+                </div>
+  
+                <div id="js-message-error" class="modal__message-error" style="display: none">
+                  <div class="message-error"></div>
+                </div>
+  
+                <form class="modal-form" action="#">
+                  <div class="modal-form__inner">
+                    <div class="modal-form__group">
+                      <label class="modal-form__label" for="">Как Вас зовут?*</label>
+                      <input type="text" placeholder="Ваше имя" class="modal-form__input js-input" required>
+                    </div>
+  
+                    <div class="modal-form__group">
+                      <label class="modal-form__label" for="">Телефон?*</label>
+                      <input type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ" class="modal-form__input js-input js-input-phone" required>
+                    </div>
+  
+                    <div class="modal-form__group">
+                      <label class="modal-form__label" for="">Вопрос/пожеление/комментарий</label>
+                      <textarea class="modal-form__textarea"></textarea>
+                    </div>
+  
+                    <div class="modal-form__footer">
+                      <input type="checkbox" id="modal-checkbox-three" class="modal-form__checkebox" required>
+                      <label for="modal-checkbox-three" class="modal-form__label--checkbox">
+                        <div class="modal-form__check"></div>
+                        Даю согласие на обработку персональных данных
+                      </label>
+  
+                      <button type="submit" class="modal-form__button">Оставить заявку</button>
+                      <!-- <a class="modal-form__button" data-fancybox href="#modal-finish">Оставить заявку</a> -->
+  
+                      <div class="modal" id="modal-finish" style="display: none;">
+                        <div class="modal__inner">
+                          <div class="modal__header">
+                            <h4 class="modal__title title">
+                              Спасибо, <span>Ваша</span> заявка отправлена
+                            </h4>
+  
+                            <img data-fancybox-close class="modal__close" src="img/close-modal.svg" alt="">
+                          </div>
+  
+                          <form class="modal-form" action="#">
+                            <div class="modal-form__inner">
+                              <div class="modal-form__img">
+                                <img src="img/modal-finish-img.svg" alt="">
+                              </div>
+                              <div class="modal-form__footer">
+                                <!-- <button type="submit" class="modal-form__button">Понятно</button> -->
+                                <a class="modal-form__button modal-form__button-finish" href="form-finish">Понятно</a>
+                              </div>
+  
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+  
+                  </div>
+                </form>
+              </div>
+            </div>
           </li>
         </ul>
       </div>
