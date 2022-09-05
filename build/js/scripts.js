@@ -241,30 +241,19 @@ window.addEventListener("DOMContentLoaded", function() {
 });
 
 });
+var rules = {
+  required: true,
+  phone: true
+};
 
-// validate////////////////////////////////////////////////////////////////////////////////////////////////////////
-// let form = document.querySelector('.modal-form__inner'),
-//     formInputs = document.querySelectorAll('.js-input')
-
-//     form.onsubmit = function () {
-//       let emptyInputs = Array.from(formInputs).filter(input => input.value === '');
-
-//           formInputs.forEach(function (input) {
-//             if (input.value === '') {
-//               input.classList.add('error');
-//               console.log('input not filled');
-//             } else{
-//               input.classList.remove('error');
-//             }
-            
-//           })
-
-//           if (emptyInputs.length !== 0) {
-//             console.log('inputs not filled');
-//             return false;
-//           }
-
-//     }
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+var button = document.querySelectorAll('.modal-form__button');
+var input = document.querySelectorAll('.js-input');
+for (var i = 0; i < button.length; i++) {
+  button[i].addEventListener('click', function() {
+    if (input.value !== '') {
+      console.log('Пустой');
+    }else{
+      console.log('НЕ пустой');
+    }
+  })
+}

@@ -43,20 +43,18 @@
   // .catalog__item
 
   &__item {
-    flex: 0 1 280px;
+    flex: 0 1 380px;
     display: grid;
-    align-content: space-between;
     padding: 15px;
     background-color: #F5F5F5;
 
     @media (max-width: $breakpoint992) {
-      flex: 0 1 100%;
-      display: flex;
-      align-items: center;
+      grid-template-columns: repeat(3, 156px 59% 156px);
       width: 100%;
     }
 
     @media (max-width: $breakpoint768) {
+      display: flex;
       flex-direction: column;
     }
 
@@ -87,12 +85,28 @@
 
   }
 
+  &__heading {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 16px;
+    line-height: 140%;
+
+    @media (max-width: $breakpoint992) {
+      margin-top: 0;
+    }
+
+    @media (max-width: $breakpoint768) {
+      margin-top: 10px;
+    }
+  }
+
   // .catalog__desc
 
   &__desc {
-    margin-bottom: 9px;
+    margin-bottom: 10px;
     text-align: center;
     font-size: 10px;
+    line-height: 140%;
 
     @media (max-width: $breakpoint992) {
       margin-bottom: 0;
@@ -109,6 +123,17 @@
   // .catalog__price-ordering
 
   &__price-ordering {
+    display: flex;
+    justify-content: space-between;
+
+
+    @media (max-width: $breakpoint992) {
+      flex-direction: column;
+    }
+
+    @media (max-width: $breakpoint768) {
+      align-items: center;
+    }
 
     @media (max-width: $breakpoint480) {
       width: 100%;
@@ -135,7 +160,7 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 250px;
+    width: 133px;
     height: 32px;
     background-color: #417E43;
     font-size: 10px;
@@ -183,6 +208,11 @@
       height: 32px;
     }
 
+    @media (max-width: $breakpoint768) {
+      justify-content: center;
+    }
+
+
     @media (max-width: $breakpoint480) {
       width: 100%;
     }
@@ -194,6 +224,14 @@
 .catalog__img-container {
   width: 100%;
   height: 100%;
+
+  @media (max-width: $breakpoint992) {
+    flex: 0 1 156px;
+  }
+
+  @media (max-width: $breakpoint768) {
+    flex: 0 1 auto;
+  }
 }
 
 .catalog__img-item {
