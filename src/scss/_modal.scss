@@ -253,3 +253,11 @@
 .fancybox-bg {
   background: #0e0e0e79;
 }
+
+#-error {
+  display: none;
+}
+
+.modal-form__input.error {
+  border: 1px solid rgb(247, 5, 5);
+}

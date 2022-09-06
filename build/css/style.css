@@ -1125,6 +1125,14 @@ body.locked {
   background: #0e0e0e79;
 }
 
+#-error {
+  display: none;
+}
+
+.modal-form__input.error {
+  border: 1px solid #f70505;
+}
+
 .footer__inner {
   background-color: #3C353E;
   border-radius: 20px 20px 0px 0px;

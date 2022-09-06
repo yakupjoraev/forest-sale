@@ -89,12 +89,12 @@
                 <div class="modal-form__inner">
                   <div class="modal-form__group">
                     <label class="modal-form__label" for="">Как Вас зовут?*</label>
-                    <input type="text" placeholder="Ваше имя" class="modal-form__input js-input" required>
+                    <input type="text" placeholder="Ваше имя" class="modal-form__input js-input" data-validate-field="fio">
                   </div>
 
                   <div class="modal-form__group">
                     <label class="modal-form__label" for="">Телефон?*</label>
-                    <input type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ" class="modal-form__input js-input js-input-phone" required>
+                    <input type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ" class="modal-form__input js-input js-input-phone" data-validate-field="tel">
                   </div>
 
                   <div class="modal-form__group">
@@ -103,7 +103,7 @@
                   </div>
 
                   <div class="modal-form__footer">
-                    <input type="checkbox" id="modal-checkbox" class="modal-form__checkebox" required>
+                    <input type="checkbox" id="modal-checkbox" class="modal-form__checkebox">
                     <label for="modal-checkbox" class="modal-form__label--checkbox">
                       <div class="modal-form__check"></div>
                       Даю согласие на обработку персональных данных
@@ -386,7 +386,7 @@
         <div class="modal-form__group">
           <label class="modal-form__label" for="">Количество?</label>
           <div class="modal-form__group-container">
-            <input type="number" min="5" placeholder="от 5" class="modal-form__input js-input" required>
+            <input type="number" min="5" placeholder="от 5" class="modal-form__input js-input">
             <p class="modal-form__text">м. куб</p>
           </div>
 
@@ -394,12 +394,12 @@
 
         <div class="modal-form__group">
           <label class="modal-form__label" for="">Как Вас зовут?*</label>
-          <input type="text" placeholder="Ваше имя" class="modal-form__input js-input" required>
+          <input type="text" placeholder="Ваше имя" class="modal-form__input js-input">
         </div>
 
         <div class="modal-form__group">
           <label class="modal-form__label" for="">Телефон?*</label>
-          <input type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ" class="modal-form__input js-input js-input-phone" required>
+          <input type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ" class="modal-form__input js-input js-input-phone" data-validate-field="tel">
         </div>
 
         <div class="modal-form__group">
@@ -408,7 +408,7 @@
         </div>
 
         <div class="modal-form__footer">
-          <input type="checkbox" id="modal-checkbox-two" class="modal-form__checkebox" required>
+          <input type="checkbox" id="modal-checkbox-two" class="modal-form__checkebox">
           <label for="modal-checkbox-two" class="modal-form__label--checkbox">
             <div class="modal-form__check"></div>
             Даю согласие на обработку персональных данных
@@ -542,13 +542,13 @@
                   <div class="modal-form__inner">
                     <div class="modal-form__group">
                       <label class="modal-form__label" for="">Как Вас зовут?*</label>
-                      <input type="text" placeholder="Ваше имя" class="modal-form__input js-input" required>
+                      <input type="text" placeholder="Ваше имя" class="modal-form__input js-input">
                     </div>
 
                     <div class="modal-form__group">
                       <label class="modal-form__label" for="">Телефон?*</label>
                       <input type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ" class="modal-form__input js-input js-input-phone"
-                        required>
+                        required data-validate-field="tel">
                     </div>
 
                     <div class="modal-form__group">
@@ -557,7 +557,7 @@
                     </div>
 
                     <div class="modal-form__footer">
-                      <input type="checkbox" id="modal-checkbox-three" class="modal-form__checkebox" required>
+                      <input type="checkbox" id="modal-checkbox-three" class="modal-form__checkebox">
                       <label for="modal-checkbox-three" class="modal-form__label--checkbox">
                         <div class="modal-form__check"></div>
                         Даю согласие на обработку персональных данных
@@ -1350,6 +1350,9 @@
 <script src="./js/jquery-3.6.0.min.js"></script>
 <script src="./js/jquery.fancybox.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="./js/inputmask.min.js"></script>
+<script src="./js/just-validate.min.js"></script>
+<!-- <script src="./js/jquery.mask.min.js"></script> -->
 <script src="./js/scripts.min.js"></script>
 
 </html>
