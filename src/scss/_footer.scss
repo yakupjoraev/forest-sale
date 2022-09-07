@@ -111,7 +111,12 @@
   // .footer__connection-text
 
   &__connection-text {
+    font-size: 16px;
     font-weight: 700;
+
+    @media (max-width: $breakpoint992) {
+      font-size: 14px;
+    }
   }
 
   // .footer__connection-link
@@ -120,7 +125,7 @@
     display: flex;
     justify-content: end;
     margin-bottom: 7px;
-    font-weight: 14;
+    font-size: 14px;
     font-weight: 400;
     color: $whiteColor;
 

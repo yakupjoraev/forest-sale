@@ -1,5 +1,5 @@
 .sales-geography {
-  padding: 40px 0 80px;
+  padding: 50px 0 60px;
 
   @media (max-width: $breakpoint992) {
     padding: 40px 0 60px;
@@ -37,7 +37,7 @@
 
   &__region {
     position: absolute;
-    left: 0;
+    left: 10%;
     top: 0;
     transform: translateY(100%);
     display: none;
@@ -58,6 +58,10 @@
       background-image: url('../img/gps.svg');
       background-repeat: no-repeat;
       background-size: cover;
+    }
+
+    @media (max-width: $breakpoint992) {
+      left: 0;
     }
 
     @media (max-width: $breakpoint480) {
@@ -86,6 +90,7 @@
 
   &__map {
     display: flex;
+    justify-content: center;
 
     @media(max-width: 768px) {
       height: 450px;
@@ -128,8 +133,8 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 191px;
-    height: 32px;
+    width: 246px;
+    height: 37px;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     -webkit-transition-property: color;
@@ -141,9 +146,17 @@
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 14px;
+    line-height: 17px;
     color: $whiteColor;
+
+    
+    @media (max-width: $breakpoint992) {
+      width: 191px;
+      height: 32px;
+      font-size: 10px;
+      line-height: 12px;
+    }
 
     &::before {
       content: "";

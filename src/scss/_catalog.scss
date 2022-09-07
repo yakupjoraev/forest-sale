@@ -1,5 +1,5 @@
 .catalog {
-  padding-bottom: 80px;
+  padding-bottom: 50px;
   background-color: $whiteColor;
 
   @media (max-width: $breakpoint768) {
@@ -88,10 +88,11 @@
   &__heading {
     margin: 10px 0;
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 140%;
 
     @media (max-width: $breakpoint992) {
+      font-size: 16px;
       margin-top: 0;
     }
 
@@ -105,12 +106,13 @@
   &__desc {
     margin-bottom: 10px;
     text-align: center;
-    font-size: 10px;
+    font-size: 14px;
     line-height: 140%;
 
     @media (max-width: $breakpoint992) {
       margin-bottom: 0;
       margin-right: 9px;
+      font-size: 10px;
     }
 
     @media (max-width: $breakpoint768) {
@@ -125,10 +127,14 @@
   &__price-ordering {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
 
 
     @media (max-width: $breakpoint992) {
       flex-direction: column;
+      justify-content: center;
+      margin-top: 0;
     }
 
     @media (max-width: $breakpoint768) {
@@ -143,13 +149,18 @@
   // .catalog__price
 
   &__price {
-    margin-bottom: 9px;
     text-align: center;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 130%;
 
     span {
       color: #417E43;
+    }
+
+    @media (max-width: $breakpoint992) {
+      margin-bottom: 9px;
+      font-size: 18px;
     }
   }
 
@@ -160,11 +171,11 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 133px;
-    height: 32px;
+    width: 150px;
+    height: 37px;
     background-color: #417E43;
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 14px;
+    line-height: 17px;
     color: $whiteColor;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
@@ -204,6 +215,8 @@
     }
 
     @media (max-width: $breakpoint992) {
+      font-size: 10px;
+      line-height: 12px;
       width: 157px;
       height: 32px;
     }

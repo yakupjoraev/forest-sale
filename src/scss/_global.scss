@@ -42,11 +42,15 @@ body {
   text-align: center;
   line-height: 130%;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 36px;
   color: $blackColor;
 
   span {
     color: #417E43;
+  }
+
+  @media (max-width: $breakpoint768) {
+    font-size: 24px;
   }
 
 }

@@ -33,7 +33,6 @@
 .navbar {
   display: flex;
   align-items: center;
-  padding: 0 80px;
 
   @media (max-width: $breakpoint768) {
     align-items: start;
@@ -75,8 +74,8 @@
   &__item-link {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 16px;
+    line-height: 19px;
     color: $whiteColor;
 
     &:hover{
@@ -118,9 +117,14 @@
 
   &__phone-link {
     font-weight: 700;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 16px;
+    line-height: 20px;
     color: $whiteColor;
+
+    @media (max-width: $breakpoint992) {
+      font-size: 12px;
+      line-height: 15px;
+    }
 
     @media (max-width: $breakpoint768) {
       font-size: 3px;
@@ -149,9 +153,14 @@
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 14px;
+    line-height: 17px;
     color: $whiteColor;
+
+    @media (max-width: $breakpoint992) {
+      font-size: 10px;
+      line-height: 12px;
+    }
 
     @media (max-width: $breakpoint768) {
       display: none;
@@ -247,13 +256,13 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 134px;
-    height: 32px;
+    width: 166px;
+    height: 37px;
     background-color: $whiteColor;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 14px;
+    line-height: 17px;
     color: #015304;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
@@ -262,6 +271,13 @@
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
     overflow: hidden;
+
+    @media (max-width: $breakpoint992) {
+      width: 134px;
+      height: 32px;
+      font-size: 10px;
+      line-height: 10px;
+    }
 
     &::before {
       content: "";
@@ -426,6 +442,8 @@
 
   // .menu__link
   .menu__item-link {
+    font-size: 12px;
+    line-height: 15px;
     color: #015304;
   }
 }

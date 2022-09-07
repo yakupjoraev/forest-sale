@@ -1,6 +1,6 @@
 .about-company {
   position: relative;
-  padding: 80px 0;
+  padding: 50px 0;
   background-color: #F5F5F5;
   overflow: hidden;
 
@@ -69,9 +69,10 @@
 
   &__text {
     margin-bottom: 30px;
-    font-size: 14px;
+    font-size: 16px;
 
     @media (max-width: $breakpoint992) {
+      font-size: 14px;
       flex: 0 1 45%;
     }
 
@@ -107,9 +108,13 @@
   // .about-company__item-desc
 
   &__item-desc {
-    margin-left: 25px;
+    margin-left: 12px;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
+
+    @media (max-width: $breakpoint992) {
+      font-size: 14px;
+    }
   }
 
   // .about-company__item--btn
@@ -124,12 +129,12 @@
     justify-content: center;
     align-items: center;
     width: 150px;
-    height: 32px;
+    height: 37px;
     background-color: #3C353E;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 14px;
+    line-height: 17px;
     color: $whiteColor;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
@@ -140,6 +145,13 @@
     overflow: hidden;
     background-color: #3C353E;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+
+    
+    @media (max-width: $breakpoint992) {
+      height: 32px;
+      font-size: 10px;
+      line-height: 12px;
+    }
 
     &::before {
       content: "";
